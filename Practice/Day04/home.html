@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- React CDN Links -> To Use React Library -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel CDN Links -> To Compile ReactJS Code -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+    <!-- React17 Style Code
+    <script type="text/babel">
+        ReactDOM.render("A simple React Code", document.querySelector("p"))
+    </script> -->
+
+    <!-- React18 Style Code -->
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.querySelector("p"))
+        root.render("React Injected Code Snippet")
+    </script>
+
+</head>
+<body>
+    <h1>React Page</h1>
+    <h3>This Page is Configured with ReactJS</h3>
+    <!-- This InnerHTML Code will be overwritten by React Code Snippet -->
+    <p>This is the React Code</p>
+    <div>Go back to <a href="./index.html">Index Page</a></div>
+</body>
+</html>
